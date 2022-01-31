@@ -1,0 +1,59 @@
+.jumbotron {
+    background-image: url('/img/banner.jpg');
+}
+
+#logo {
+    font-size: 100px;
+    color: darkgoldenrod;
+    opacity: 75%;
+}
+
+
+header h1 {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 360px) {
+    header h1 {
+        font-size: 28px;
+    }
+    #logo {
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    header h1 {
+        font-size: 33px;
+    }
+    #logo {
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    header h1 {
+        font-size: 40px;
+    }
+    #logo {
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 60px;
+    }
+    #logo {
+        font-size: 95px;
+    }
+}
+
+header i {
+    font-size: 15px;
+}
+
+.navbar {}
