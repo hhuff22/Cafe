@@ -2,33 +2,34 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after the Boostrap CSS -->
+    <!-- Additional CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
-    <title>Broken Mirror Cafe</title>
+    <title>Goldenrod Cafe</title>
 </head>
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid pb-0">
+    <header class="jumbotron jumbotron-fluid pb-0 pt-5">
         <div class="container">
-            <div class="row" id="logoTitle">
-                <div class="col-3 text-center">
-                    <i class="fas fa-mug-hot fa-lg" id="logo"></i>
-                </div>
-
-                <div class="col-6">
-                    <h1>Broken Mirror Cafe</h1>
+            <div class="row pl-5">
+                <div class="col">
+                    <div class="media">
+                        <i class="fas fa-mug-hot fa-lg pr-3" id="logo"></i>
+                        <div class="media-body">
+                            <h1>Goldenrod Cafe</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -65,7 +66,7 @@
 
     <div id="menuCarousel">
         <div class="container">
-            <div class="row row-content">
+            <div class="row row-content pt-5 pt-lg-0">
                 <div class="col-10 col-md-8 col-lg-6 mx-auto" id="carouselCol">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -121,11 +122,74 @@
         </div>
     </div>
 
-    <footer>
+    <div class="aboutUs">
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col">
+                    <h2>About Us</h2>
+                    <p class="quote d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Distinctio soluta amet
+                        voluptatibus error earum,<br> dolorem fuga ipsam at eligendi iste quasi iusto<br> obcaecati
+                        omnis eius
+                        dolor
+                        repellendus aut unde in.<br>&#8212; Person</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quasi vero tempora deleniti
+                        quo
+                        dolores minus, sapiente consequuntur cum molestias voluptas quia rem reiciendis est aliquam,
+                        exercitationem totam facilis. Dolore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="locations">
+        <div class="container">
+            <div class="row row-content align-items-center mt-3">
+                <div class="col location">
+                    <img class="w-100" src="/img/downtown.jfif" />
+                    <h3>Downtown</h3>
+                    <p class="d-none d-sm-block">123 Cassidy Ln.</p>
+                </div>
+                <div class="col location">
+                    <img class="w-100" src="/img/university.jfif" />
+                    <h3>University</h3>
+                    <p class="d-none d-sm-block">123 University Ct.</p>
+                </div>
+            </div>
+            <div class="row row-content align-items-center mb-3">
+                <div class="col location">
+                    <img class="w-100" src="/img/beacham.jfif" />
+                    <h3>Beacham</h3>
+                    <p class="d-none d-sm-block">123 Beacham St.</p>
+                </div>
+                <div class="col location">
+                    <img class="w-100" src="/img/florence.jfif" />
+                    <h3>Florence</h3>
+                    <p class="d-none d-sm-block">123 Marks Ave.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p>All Rights Reserved<br>Broken Compass Cafe<br><br>Copyright 2022</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- Plugins -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
