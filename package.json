@@ -1,12 +1,20 @@
 {
   "name": "cafe-site",
   "version": "1.0.0",
-  "description": "This is a website for the fictional Broken Mirror Cafe.",
+  "description": "This is a website for the fictional Goldenrod Cafe.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/css/all.css dist/fonts/css/ && copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/fonts/webfonts",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -19,7 +27,13 @@
   },
   "homepage": "",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.0",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
