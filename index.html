@@ -24,9 +24,13 @@
             <div class="row pl-5">
                 <div class="col">
                     <div class="media">
-                        <i class="fas fa-mug-hot fa-lg pr-3" id="logo"></i>
+                        <a href="#">
+                            <i class="fas fa-mug-hot fa-lg pr-3" id="logo"></i>
+                        </a>
                         <div class="media-body">
-                            <h1>Goldenrod Cafe</h1>
+                            <a href="#">
+                                <h1>Goldenrod Cafe</h1>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -63,9 +67,10 @@
         </div>
     </header>
 
+    <!-- Carousel -->
     <div id="menuCarousel">
         <div class="container">
-            <div class="row row-content pt-5 pt-lg-0">
+            <div class="row pt-5 pt-lg-0">
                 <div class="col-10 col-md-8 col-lg-6 mx-auto" id="carouselCol">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -94,7 +99,8 @@
                                 <img class="d-block w-100" src="/img/shakshuka.webp" alt="Chrome River Campground" />
                                 <div class="carousel-caption">
                                     <h3>Shakshuka</h3>
-                                    <p class="d-none d-sm-block">Simmering tomatoes, onions, garlic, spices and gently poached eggs.</p>
+                                    <p class="d-none d-sm-block">Simmering tomatoes, onions, garlic, spices and gently
+                                        poached eggs.</p>
                                 </div>
                             </div>
                         </div>
@@ -106,48 +112,56 @@
                             <span class="carousel-control-next-icon"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                        <button class="btn btn-dark btn-sm" id="carouselButton">
+                            <i class="fa fa-pause"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- About Us-->
     <div class="aboutUs">
         <div class="container">
-            <div class="row row-content align-items-center">
+            <div class="row align-items-center">
                 <div class="col">
                     <h2>About Us</h2>
-                    <p class="quote d-none d-sm-block">“Learning how to be still,<br> to really be still and let life happen<br>—that stillness becomes a radiance.”<br>&#8212; Morgan Freeman</p>
-                    <p>Goldenrod Cafe was founded in 2000 and has been loving and serving customers for decades. We create a fresh and friendly environment that fosters productivity, creativity, and peace over top notch, handcrafted food and beverages!</p>
+                    <p class="quote d-none d-sm-block">“Learning how to be still,<br> to really be still and let life
+                        happen<br>—that stillness becomes a radiance.”<br>&#8212; Morgan Freeman</p>
+                    <p>Goldenrod Cafe was founded in 2000 and has been loving and serving customers for decades. We
+                        create a fresh and friendly environment that fosters productivity, creativity, and peace over
+                        top notch, handcrafted food and beverages!</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Locations -->
     <div id="locations">
         <div class="container">
-            <div class="row row-content align-items-center mt-3">
-                <div class="col location">
+            <div class="row align-items-center mt-3">
+                <div class="col-sm location">
                     <img class="w-100" src="/img/downtown.jfif" />
                     <h3>Downtown</h3>
-                    <p class="d-none d-sm-block">123 Cassidy Ln.</p>
+                    <p>123 Cassidy Ln.</p>
                 </div>
-                <div class="col location">
+                <div class="col-sm location">
                     <img class="w-100" src="/img/university.jfif" />
                     <h3>University</h3>
-                    <p class="d-none d-sm-block">123 University Ct.</p>
+                    <p>123 University Ct.</p>
                 </div>
             </div>
-            <div class="row row-content align-items-center mb-3">
-                <div class="col location">
+            <div class="row align-items-center mb-3">
+                <div class="col-sm location">
                     <img class="w-100" src="/img/beacham.jfif" />
                     <h3>Beacham</h3>
-                    <p class="d-none d-sm-block">123 Beacham St.</p>
+                    <p>123 Beacham St.</p>
                 </div>
-                <div class="col location">
+                <div class="col-sm location">
                     <img class="w-100" src="/img/florence.jfif" />
                     <h3>Florence</h3>
-                    <p class="d-none d-sm-block">123 Marks Ave.</p>
+                    <p>123 Marks Ave.</p>
                 </div>
             </div>
         </div>
@@ -175,6 +189,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
 </body>
