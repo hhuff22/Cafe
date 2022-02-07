@@ -86,9 +86,12 @@ a, a:hover {
 .aboutUs h2, .aboutUs p {
     color: white; }
 
-.aboutUs h2 {
+.midTitles {
     font-family: 'Great Vibes', cursive;
-    font-size: 40px;
+    font-size: 50px;
+}
+
+.aboutUs h2 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 .quote {
@@ -100,7 +103,7 @@ a, a:hover {
     line-height: 1.4;
     word-spacing: 3px; }
 
-#locations {
+.midPage {
     margin-top: 0;
     padding: 5px 0;
     background-color: cornsilk;
@@ -147,4 +150,13 @@ footer .container {
     bottom: 5px;
     z-index: 100;
     opacity: 80%;
+}
+
+#careers {
+    margin: 50px 0 160px 0;
+}
+
+.locationDescription {
+    color: black;
+    text-align: left;
 }
