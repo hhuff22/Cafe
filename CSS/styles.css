@@ -160,3 +160,11 @@ footer .container {
     color: black;
     text-align: left;
 }
+
+.align-items-center {
+    text-align: center;
+}
+
+.menuItem {
+    height: 360px;
+}
