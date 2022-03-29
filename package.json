@@ -1,46 +1,48 @@
 {
-  "name": "cafe-site",
-  "version": "1.0.0",
-  "description": "This is a website for the fictional Goldenrod Cafe.",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run watch:all",
-    "lite": "lite-server",
-    "copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/css/all.css dist/fonts/css/ && copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/fonts/webfonts",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-    "scss": "node-sass -o css/ css/"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "Herman Huff",
-  "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
-  "devDependencies": {
-    "copyfiles": "^2.2.0",
-    "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.6.1",
-    "node-sass": "^7.0.0",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1",
-    "usemin-cli": "^0.6.0"
-  },
+  "name": "cafe_react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "bootstrap": "^4.5.2",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.1.3",
     "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "jquery": "^3.6.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.0",
+    "reactstrap": "^9.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
