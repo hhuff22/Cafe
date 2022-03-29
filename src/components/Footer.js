@@ -8,10 +8,12 @@ function Footer(props) {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                                className="fa fa-instagram"></i></a>
-                        <a className="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                                className="fa fa-facebook"></i></a>
+                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/">
+                            <i className="fa fa-instagram"></i>
+                        </a>
+                        <a className="btn btn-social-icon btn-facebook" href="http://facebook.com/">
+                            <i className="fa fa-facebook"></i>
+                        </a>
                     </div>
                 </div>
                 <div className="row mt-3">

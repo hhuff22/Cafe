@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import cappuccino from '../img/cappuccino.jpeg';
 import pumpkinSoup from '../img/pumpkin-soup.webp';
 import shakshuka from '../img/shakshuka.webp';
@@ -37,7 +38,7 @@ class CarouselComponent extends Component {
                 <div className="container">
                     <div className="row pt-5 pt-lg-0">
                         <div className="col-10 col-md-8 col-lg-6 mx-auto" id="carouselCol">
-                            <a href="menu.html">
+                            <Link to='/menu.html' className="nav-link">
                                 <div id="homeCarousel" className="carousel slide" data-ride="carousel">
                                     <ol className="carousel-indicators">
                                         <li data-target="#homeCarousel" data-slide-to="0" className="active"></li>
@@ -84,9 +85,9 @@ class CarouselComponent extends Component {
                                     </a> *}
                                    {/* <button className="btn btn-dark btn-sm" id="carouselButton">
                                         <i className="fa fa-pause"></i>
-        </button> */}
+                                       </button> */}
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

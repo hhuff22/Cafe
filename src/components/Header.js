@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMugHot, faLaptopHouse, faBreadSlice, faMapMarkerAlt, faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { Media, Navbar, Nav, NavItem, Button, NavLink, Collapse, NavbarToggler, NavbarBrand  } from 'react-bootstrap';
 
 class Header extends Component {
     constructor(props) {
@@ -26,12 +26,12 @@ class Header extends Component {
                     <div className="row pl-5">
                         <div className="col">
                             <div>
-                                <a href="index.html">
-                                <FontAwesomeIcon icon={faMugHot} id="logo" />
-                                </a>
-                                <a href="index.html">
+                                <Link to='/index.html'>
+                                    <FontAwesomeIcon icon={faMugHot} id="logo" />
+                                </Link>
+                                <Link to='/index.html'>
                                     <h1>Goldenrod Cafe</h1>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -47,28 +47,28 @@ class Header extends Component {
                                     <div className="collapse navbar-collapse" id="cafeNavbar">
                                         <ul className="navbar-nav flex-row">
                                             <li className="nav-item active">
-                                                <a className="nav-link" href="index.html">
+                                                <Link to='/index.html' className="nav-link">
                                                     <FontAwesomeIcon icon={faLaptopHouse} className="navIcon" />
                                                     <br /> Home
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="menu.html">
+                                                <Link to='/menu.html' className="nav-link">
                                                     <FontAwesomeIcon icon={faBreadSlice} className="navIcon" />
                                                     <br />Menu
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="sites.html">
+                                                <Link to='/sites.html' className="nav-link">
                                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="navIcon" />
                                                     <br />Sites
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="careers.html">
+                                                <Link to='/careers.html' className="nav-link">
                                                     <FontAwesomeIcon icon={faBriefcase} className="navIcon" />
                                                     <br />Careers
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import downtown from '../img/downtown.jfif';
 import university from '../img/university.jfif';
 import beacham from '../img/beacham.jfif';
@@ -12,34 +13,34 @@ function Locations(props) {
                 <h2 className="midTitles mt-4">Our Locations</h2>
                 <div className="row align-items-center mt-3">
                     <div className="col-sm location downtown">
-                        <a href="sites.html">
+                        <Link to='/sites.html'>
                             <img className="w-100" src={downtown} />
                             <h3>Downtown</h3>
                             <p>123 Cassidy Ln.</p>
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-sm location university">
-                        <a href="sites.html">
+                        <Link to='/sites.html'>
                             <img className="w-100" src={university} />
                             <h3>University</h3>
                             <p>123 University Ct.</p>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="row align-items-center mb-3">
                     <div className="col-sm location beacham">
-                        <a href="sites.html">
+                        <Link to='/sites.html'>
                             <img className="w-100" src={beacham} />
                             <h3>Beacham</h3>
                             <p>123 Beacham St.</p>
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-sm location florence">
-                        <a href="sites.html">
+                        <Link to='/sites.html'>
                             <img className="w-100" src={florence} />
                             <h3>Florence</h3>
                             <p>123 Marks Ave.</p>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
