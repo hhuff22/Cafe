@@ -27,13 +27,17 @@ header h1 {
   header h1 {
       font-size: 32px; }
   #logo {
-      font-size: 45px; } }
+      font-size: 45px; }
+  .carouselItem {
+      width: 100%; }}
 
 @media screen and (min-width: 412px) {
   header h1 {
       font-size: 35px; }
   #logo {
-      font-size: 55px; } }
+      font-size: 55px; } 
+  .carouselItem {
+      width: 60%; }}
 
 @media screen and (min-width: 540px) {
   header h1 {
@@ -45,19 +49,53 @@ header h1 {
   header h1 {
       font-size: 60px; }
   #logo {
-      font-size: 75px; } }
+      font-size: 75px; }
+  .carouselItem {
+      width: 60%; }}
 
 @media screen and (min-width: 912px) {
   header h1 {
       font-size: 65px; }
   #logo {
-      font-size: 85px; } }
+      font-size: 85px; }
+  .carouselItem {
+      width: 60%; }}
+
+@media screen and (min-width: 950px) {
+  .carouselItem {
+    width: 55%; }}
 
 @media screen and (min-width: 1024px) {
   header h1 {
       font-size: 80px; }
   #logo {
-      font-size: 95px; }}
+      font-size: 95px; }
+  .carouselItem {
+      width: 45%; }}
+
+@media screen and (min-width: 1200px) {
+  .carouselItem {
+    width: 41%; }}
+
+@media screen and (min-width: 1350px) {
+  .carouselItem {
+    width: 36%; }}
+
+@media screen and (min-width: 1500px) {
+  .carouselItem {
+    width: 33%; }}
+
+@media screen and (min-width: 1700px) {
+  .carouselItem {
+    width: 30%; }}
+
+@media screen and (min-width: 1800px) {
+  .carouselItem {
+    width: 23%; }}
+
+@media screen and (min-width: 1900px) {
+  .carouselItem {
+    width: 22%; }}
 
 .nav-item {
   padding-left: 5px;
@@ -78,11 +116,6 @@ a, a:hover {
   height: 750px;
 }
 
-#menuCarousel h3, #menuCarousel p {
-  color:cornsilk;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
 #menuCarousel::before {
   position: absolute;
   content: "";
@@ -91,7 +124,13 @@ a, a:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-#carouselCol {
+#menuCarousel h3, #menuCarousel p {
+  color:cornsilk;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.carouselItem {
+  margin: auto;
   margin-top: 40px;
 }
 
